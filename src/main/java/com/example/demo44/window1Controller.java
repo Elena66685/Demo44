@@ -17,6 +17,9 @@ public class window1Controller {
     @FXML
     private Button knobs3;
 
+    @FXML
+    private Label knobs11;
+
 public void newWindow1() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("window2.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -33,6 +36,11 @@ public void newWindow1() throws IOException {
         stage.setTitle("Телега кодера!");
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void on()
+    {
+        knobs11.setText("Люди которые придумали синтетические шнурки не правы! В.М.Дёмкин");
     }
 
 }
